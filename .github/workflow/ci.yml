@@ -1,0 +1,10 @@
+name: devops practice pipeline
+
+'on':
+    push:
+
+jobs:
+    execution:
+        run-on: ubuntu-latest
+        steps:
+      - run: ./gradlew run
