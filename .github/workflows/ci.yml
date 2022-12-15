@@ -1,12 +1,12 @@
 name: devops practice pipeline
 
-'on':
+on:
     push:
 
 jobs:
     my-job:
         runs-on: ubuntu-latest
         steps:
-            - name: Check out repository code
+            - name: checkout repo
             uses: actions/checkout@v3
-            - run: ./gradlew run
+            - run: ./gradlew run 
