@@ -6,6 +6,9 @@ on:
 jobs:
   my-job:
     runs-on: ubuntu-latest
+    with:
+        distribution: temurin
+        java-version: 11
 
     steps:
       - uses: actions/checkout@v3
