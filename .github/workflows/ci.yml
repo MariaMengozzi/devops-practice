@@ -5,6 +5,6 @@ name: devops practice pipeline
 
 jobs:
     my-job:
-        run-on: ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
             - run: ./gradlew run
